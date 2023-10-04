@@ -34,10 +34,28 @@
 
 //filter method
 
-const nums = [100, 2, 5, 42, 99];
-const odds = nums.filter((num) => num % 2);
-console.log(odds);
+// const nums = [100, 2, 5, 42, 99];
+// const odds = nums.filter((num) => num % 2);
+// console.log(odds);
 
-const people = ["jerks", "nice people", "jerks", "nice people", "nice people"];
-const nicePeople = people.filter((person) => !person.includes("jerk"));
-console.log(nicePeople);
+// const people = ["jerks", "nice people", "jerks", "nice people", "nice people"];
+// const nicePeople = people.filter((person) => !person.includes("jerk"));
+// console.log(nicePeople);
+
+//find method
+
+const cars = [
+  { color: "red", make: "BMW", year: 2001 },
+  { color: "white", make: "Toyota", year: 2013 },
+  { color: "black", make: "Ford", year: 2014 },
+  { color: "white", make: "Tesla", year: 2016 },
+];
+
+const firstWhiteCar = cars.find((car) => car.color === "white");
+// firstWhiteCar -> {color: 'white', make: 'Toyota', year: 2013}
+
+const missingCar = cars.find((car) => car.color === "blue");
+// missingCar -> undefined
+const notTooOldCar = cars.find((car) => car.year <= 2014);
+
+console.log(notTooOldCar);
