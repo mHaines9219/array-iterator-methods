@@ -25,9 +25,19 @@
 
 // els.forEach((el) => document.body.append(el));
 
-const instructors = ["alex", "stephanie", "daniel"];
+// const instructors = ["alex", "stephanie", "daniel"];
 
-instructors.map((instructor, idx) => {
-  const isAwesomeArr = [`${instructor} is awesome`];
-  console.log(isAwesomeArr);
-});
+// instructors.map((instructor, idx) => {
+//   const isAwesomeArr = [`${instructor} is awesome`];
+//   console.log(isAwesomeArr);
+// });
+
+//filter method
+
+const nums = [100, 2, 5, 42, 99];
+const odds = nums.filter((num) => num % 2);
+console.log(odds);
+
+const people = ["jerks", "nice people", "jerks", "nice people", "nice people"];
+const nicePeople = people.filter((person) => !person.includes("jerk"));
+console.log(nicePeople);
