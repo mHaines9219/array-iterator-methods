@@ -44,6 +44,23 @@
 
 //find method
 
+// const cars = [
+//   { color: "red", make: "BMW", year: 2001 },
+//   { color: "white", make: "Toyota", year: 2013 },
+//   { color: "black", make: "Ford", year: 2014 },
+//   { color: "white", make: "Tesla", year: 2016 },
+// ];
+
+// const firstWhiteCar = cars.find((car) => car.color === "white");
+// // firstWhiteCar -> {color: 'white', make: 'Toyota', year: 2013}
+
+// const missingCar = cars.find((car) => car.color === "blue");
+// // missingCar -> undefined
+// const notTooOldCar = cars.findIndex((car) => car.year === 2014);
+
+// console.log(notTooOldCar);
+
+//some method
 const cars = [
   { color: "red", make: "BMW", year: 2001 },
   { color: "white", make: "Toyota", year: 2013 },
@@ -51,12 +68,8 @@ const cars = [
   { color: "white", make: "Tesla", year: 2016 },
 ];
 
-const firstWhiteCar = cars.find((car) => car.color === "white");
-// firstWhiteCar -> {color: 'white', make: 'Toyota', year: 2013}
-
-const missingCar = cars.find((car) => car.color === "blue");
-// missingCar -> undefined
-const notTooOldCar = cars.findIndex((car) => car.year === 2014);
-
-console.log(notTooOldCar);
-
+const hasFord = cars.some((car) => car.make === "Ford");
+// hasFord -> true
+const myRoom = ["evil monkey", "bed", "lamp"];
+const isEvilMonkeyInRoom = myRoom.some((item) => item === "evil monkey");
+console.log(isEvilMonkeyInRoom);
