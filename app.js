@@ -56,6 +56,7 @@ const firstWhiteCar = cars.find((car) => car.color === "white");
 
 const missingCar = cars.find((car) => car.color === "blue");
 // missingCar -> undefined
-const notTooOldCar = cars.find((car) => car.year <= 2014);
+const notTooOldCar = cars.findIndex((car) => car.year === 2014);
 
 console.log(notTooOldCar);
+
